@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#838A8E",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "公告展示",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-drawer": "/uni_modules/uni-drawer/components/uni-drawer/uni-drawer"
+  }
+}

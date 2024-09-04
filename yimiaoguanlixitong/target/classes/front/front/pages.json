@@ -1,0 +1,291 @@
+{
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "登录"
+		}
+	},{
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "注册"
+		}
+	},{
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "忘记密码"
+		}
+		},
+		{
+		"path": "pages/changepassword/changepassword",
+		"style": {
+		"navigationBarBackgroundColor": "#838A8E",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的"
+		}
+	},{
+		"path": "pages/user-info/userinfo",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户信息"
+		}
+	}
+
+       ,{
+		"path": "pages/forum/forum-index",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "全部发帖"
+		}
+	},{
+		"path": "pages/forum/forum-detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "发帖详情"
+		}
+	},{
+		"path": "pages/forum/forum-my",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的发帖"
+		}
+	},{
+		"path": "pages/forum/forum-add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "发贴(修改/新增)"
+		}
+	}
+	,{
+		"path": "pages/gonggao/list",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公告展示"
+		}
+	},{
+		"path": "pages/gonggao/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的公告"
+		}
+	},{
+		"path": "pages/gonggao/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公告添加/修改"
+		}
+	},{
+		"path": "pages/gonggao/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "公告详情"
+		}
+	}
+	,{
+		"path": "pages/gongzuorenyuan/list",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "工作人员展示"
+		}
+	},{
+		"path": "pages/gongzuorenyuan/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的工作人员"
+		}
+	},{
+		"path": "pages/gongzuorenyuan/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "工作人员添加/修改"
+		}
+	},{
+		"path": "pages/gongzuorenyuan/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "工作人员详情"
+		}
+	}
+	,{
+		"path": "pages/yimiao/list",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗展示"
+		}
+	},{
+		"path": "pages/yimiao/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的疫苗"
+		}
+	},{
+		"path": "pages/yimiao/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗添加/修改"
+		}
+	},{
+		"path": "pages/yimiao/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗详情"
+		}
+	}
+	,{
+		"path": "pages/yimiaoCommentback/list",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗反馈展示"
+		}
+	},{
+		"path": "pages/yimiaoCommentback/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的疫苗反馈"
+		}
+	},{
+		"path": "pages/yimiaoCommentback/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗反馈添加/修改"
+		}
+	},{
+		"path": "pages/yimiaoCommentback/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗反馈详情"
+		}
+	}
+	,{
+		"path": "pages/yimiaoOrder/list",
+		"style": {
+			"navigationBarTitleText": "疫苗订单"
+		}
+	},{
+		"path": "pages/yimiaoOrder/confirm",
+		"style": {
+			"navigationBarTitleText": "订单确认"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户展示"
+		}
+	},{
+		"path": "pages/yonghu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的用户"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户添加/修改"
+		}
+	},{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户详情"
+		}
+	}
+			,{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#838A8E",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "疫苗管理系统首页"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "疫苗管理系统",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#fff",
+		"borderStyle": "black",
+		"backgroundColor": "#8ed8f3",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "首页"
+			}
+			,{
+				"pagePath": "pages/gonggao/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "公告"
+			}
+			,{
+				"pagePath": "pages/yimiao/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "疫苗"
+			}
+			,{
+			 	"pagePath": "pages/forum/forum-index",
+				"iconPath": "static/tabs/order.png",
+			 	"selectedIconPath": "static/tabs/order1.png",
+				"text": "论坛"
+			}
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "我的"
+			}
+		]
+	}
+	// "permission": {
+	// 	"scope.userLocation": {
+	// 		"desc": ""
+	// 	}
+	// },
+	// "requiredPrivateInfos": ["getLocation", "chooseLocation"]
+}

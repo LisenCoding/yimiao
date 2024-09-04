@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.YimiaoDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        a.id as id
+        ,a.yimiao_name as yimiaoName
+        ,a.yimiao_uuid_number as yimiaoUuidNumber
+        ,a.yimiao_photo as yimiaoPhoto
+        ,a.yimiao_types as yimiaoTypes
+        ,a.yimiao_kucun_number as yimiaoKucunNumber
+        ,a.yimiao_content as yimiaoContent
+        ,a.yimiao_delete as yimiaoDelete
+        ,a.insert_time as insertTime
+        ,a.create_time as createTime
+    </sql>
+    <select id="selectListView" parameterType="map" resultType="com.entity.view.YimiaoView" >
+        SELECT
+        <include refid="Base_Column_List" />
+        <!-- 级联表的字段 -->
+
+        FROM yimiao  a
+
+        <where>
+            <if test="params.ids != null">
+                and a.id in
+                <foreach item="item" index="index" collection="params.ids" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            </if>
+            <if test=" params.yimiaoName != '' and params.yimiaoName != null and params.yimiaoName != 'null' ">
+                and a.yimiao_name like CONCAT('%',#{params.yimiaoName},'%')
+            </if>
+            <if test=" params.yimiaoUuidNumber != '' and params.yimiaoUuidNumber != null and params.yimiaoUuidNumber != 'null' ">
+                and a.yimiao_uuid_number like CONCAT('%',#{params.yimiaoUuidNumber},'%')
+            </if>
+            <if test="params.yimiaoTypes != null and params.yimiaoTypes != ''">
+                and a.yimiao_types = #{params.yimiaoTypes}
+            </if>
+            <if test="params.yimiaoKucunNumberStart != null and params.yimiaoKucunNumberStart != ''">
+                <![CDATA[  and a.yimiao_kucun_number >= #{params.yimiaoKucunNumberStart}   ]]>
+            </if>
+            <if test="params.yimiaoKucunNumberEnd != null and params.yimiaoKucunNumberEnd != ''">
+                <![CDATA[  and a.yimiao_kucun_number <= #{params.yimiaoKucunNumberEnd}   ]]>
+            </if>
+             <if test="params.yimiaoKucunNumber != null and params.yimiaoKucunNumber != ''">
+                and a.yimiao_kucun_number = #{params.yimiaoKucunNumber}
+             </if>
+            <if test=" params.yimiaoContent != '' and params.yimiaoContent != null and params.yimiaoContent != 'null' ">
+                and a.yimiao_content like CONCAT('%',#{params.yimiaoContent},'%')
+            </if>
+            <if test="params.yimiaoDeleteStart != null and params.yimiaoDeleteStart != ''">
+                <![CDATA[  and a.yimiao_delete >= #{params.yimiaoDeleteStart}   ]]>
+            </if>
+            <if test="params.yimiaoDeleteEnd != null and params.yimiaoDeleteEnd != ''">
+                <![CDATA[  and a.yimiao_delete <= #{params.yimiaoDeleteEnd}   ]]>
+            </if>
+             <if test="params.yimiaoDelete != null and params.yimiaoDelete != ''">
+                and a.yimiao_delete = #{params.yimiaoDelete}
+             </if>
+            <if test=" params.insertTimeStart != '' and params.insertTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) >= UNIX_TIMESTAMP(#{params.insertTimeStart}) ]]>
+            </if>
+            <if test=" params.insertTimeEnd != '' and params.insertTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) <= UNIX_TIMESTAMP(#{params.insertTimeEnd}) ]]>
+            </if>
+
+        </where>
+        order by a.${params.sort} ${params.order}
+    </select>
+
+</mapper>

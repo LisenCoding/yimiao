@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#838A8E",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "疫苗反馈展示",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}
